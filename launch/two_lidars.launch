@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="rosbag" type="play" name="play" args= "-q /media/philip/Samsung_T5/合创/路侧数据集/白天/普通场景/银色SUV+轿车+盒子2+行人2/银色SUV+轿车+盒子2+行人2.bag" output="screen"> 
+  </node>
+  <node pkg ="lidar_calibration" type="calibration" name= "calibration" output="screen"/> 
+  <!-- <node pkg="rviz" name="rviz" type="rviz" args="-d $(find lidar_calibration)/rviz/two_lidars.rviz" /> -->
+</launch>
